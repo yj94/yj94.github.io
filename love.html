@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://a-oss.zmki.cn/2019/190616-5d05c81dbbaf5.css">
+		<style type="text/css">
+.widget_text .aplayer {margin: -12px -16px }
+.widget_text .aplayer .aplayer-info {padding: 7px 7px 7px 10px}
+.widget_text .aplayer .aplayer-info .aplayer-music {margin: 0 0 13px 0}
+.giligili-item {
+	position: relative;
+	width: 100%;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	/*margin-bottom: 8px;*/  /*阴影*/
+	padding: 12px 16px;
+	-webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+		</style>
+	</head>
+	<body style="background-color: #FFFFFF;"bgcolor="#FFFFFF">
+		<div class="widget_text giligili-item">
+            <div class="textwidget custom-html-widget">
+              <div style="text-align: center;">
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2991645986&s=100&t=" style="width: 50px;height: 50px;vertical-align: -20px;border-radius: 50%;margin-right: 5px;margin-bottom: 5px;-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);border: 2px solid #fff;" />   
+                <i class="fa fa-heart  throb" aria-hidden="true" style="color:red"></i> 
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=3545328107&s=100&t=" style="width: 50px;height: 50px;vertical-align: -20px;border-radius: 50%;margin-left: 5px;margin-bottom: 5px;-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);border: 2px solid #fff;" />
+                <br/>
+                <span id="htmer_time"></span>
+              </div>
+              <script type="text/javascript" language="javascript">function setTime() {    
+                  var create_time = Math.round(new Date(Date.UTC(2020, 12, 23, 18, 30, 0)).getTime() / 1000);
+                  var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+                  currentTime = secondToDate((timestamp - create_time));
+                  currentTimeHtml = currentTime[0] + ' 年 ' + currentTime[1] + ' 天 ' + currentTime[2] + ' 时 ' + currentTime[3] + ' 分 ' + currentTime[4] + ' 秒';
+                  document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+                }
+                function secondToDate(second) {
+                  if (!second) {
+                    return 0;
+                  }
+                  var time = new Array(0, 0, 0, 0, 0);
+                  if (second >= 365 * 24 * 3600) {
+                    time[0] = parseInt(second / (365 * 24 * 3600));
+                    second %= 365 * 24 * 3600;
+                  }
+                  if (second >= 24 * 3600) {
+                    time[1] = parseInt(second / (24 * 3600));
+                    second %= 24 * 3600;
+                  }
+                  if (second >= 3600) {
+                    time[2] = parseInt(second / 3600);
+                    second %= 3600;
+                  }
+                  if (second >= 60) {
+                    time[3] = parseInt(second / 60);
+                    second %= 60;
+                  }
+                  if (second > 0) {
+                    time[4] = second;
+                  }
+                  return time;
+                }
+                setInterval(setTime, 1000);</script>
+            </div>
+		
+		
+	</body>
+</html>

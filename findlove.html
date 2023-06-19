@@ -1,0 +1,75 @@
+<!DOCTYPEhtml>
+<html>
+     <head>
+          <metacharset="UTF-8">
+          <title></title>
+     </head>
+     <body>
+          
+          <p style="font-size:smaller" id="love">
+             99669999996669999996699666699666999966699666699666999999966666996669966666996669966</br>
+             99699999999699999999699666699669966996699666699666666699966666699669666666996669966</br>
+             99669999999999999996699666699699666699699666699666666699666666669996666666999699666</br>
+             99666699999999999966666999966699666699699666699666666996666666669996666666699999666</br>
+             99666666999999996666666699666699666699699666699666669966666666669996666666669996666</br>
+             99666666669999666666666699666669966996699666699666699966666666669996666666666966666</br>
+             99666666666996666666666699666666999966669999996666999999966666996669966666666966666</br></p></br>
+          <p style="font-size:x-large">好奇怪的一串数字...查找其中的9试试？&nbsp;&nbsp;&nbsp;</p>
+          <button id="b1" style="width: 150px;height: 60px;font-size:20px"onclick="ffRed();">揭秘</button>
+          <button id="b2" style="width: 150px;height: 60px;font-size:20px"onclick="unffRed();">隐藏</button>
+          </br></br></br></br></br></br></br></br></br></br></br>
+          <a style="font-size:smaller;" onclick="show();">我不会</a>
+          <script language="javascript">
+
+          function ffRed(){
+           var xsxf = document.getElementById("love");
+           var str2 = "9";
+           var reg=eval("/"+str2+"/gi");
+           xsxf.innerHTML =  xsxf.innerHTML.replace(reg,"<font color='#FF0000'>9</font>");
+          }          
+          </script>
+               <script language="javascript">
+
+          function unffRed(){
+           var xsxf = document.getElementById("love");
+           var str2 = "9";
+           var reg=eval("/"+str2+"/gi");
+           xsxf.innerHTML =  xsxf.innerHTML.replace(reg,"<font color='#000000'>9</font>");
+          }          
+          </script>
+
+          <script language="javascript"> 
+               　  
+               　 function loopy(){ 
+               　　 var sWord =""; 
+               　　 while(sWord!="52yj"){sWord=prompt("输入口令！");} 
+               　 } 
+               　 loopy() 
+          </script> 
+
+          <script language="javascript"> 
+
+                    function show(){
+                         document.getElementById("b1").style.visibility = "visible";
+                         document.getElementById("b2").style.visibility = "visible";
+                    }    　  
+ 
+          </script> 
+
+          <script language="javascript"> 
+
+               function unshow(){
+                    document.getElementById("b1").style.visibility = "hidden";
+                    document.getElementById("b2").style.visibility = "hidden";
+               }    　  
+               unshow()
+          </script>
+
+                    
+     </body>
+
+
+
+
+
+</html>
