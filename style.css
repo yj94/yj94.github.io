@@ -1,0 +1,80 @@
+body {
+  background: #181c20;
+  font-family: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #e6e6e6;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #23272e;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+  padding: 32px 24px 40px 24px;
+}
+header {
+  border-bottom: 1px solid #23272e;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 8px 0;
+  color: #6cb4ff;
+  letter-spacing: 2px;
+}
+.subtitle {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.markdown-body {
+  line-height: 1.8;
+  font-size: 1.08rem;
+}
+.markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  color: #6cb4ff;
+  margin-top: 2em;
+}
+.markdown-body a {
+  color: #8ecfff;
+  text-decoration: none;
+  border-bottom: 1px dashed #6cb4ff;
+  transition: border 0.2s;
+}
+.markdown-body a:hover {
+  border-bottom: 1px solid #8ecfff;
+}
+.markdown-body pre, .markdown-body code {
+  background: #23272e;
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #ffecb3;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+}
+.current-week {
+  background: #232e3a;
+  border-left: 4px solid #6cb4ff;
+  padding: 16px 16px 16px 20px;
+  margin: 24px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(108,180,255,0.10);
+  transition: background 0.3s;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23272e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d3540;
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 12px 4px 24px 4px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+} 
